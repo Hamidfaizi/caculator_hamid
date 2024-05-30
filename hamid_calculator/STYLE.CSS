@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #363f48;
+}
+.calculator{
+    position: absolute;
+    padding: 1rem;
+    width: 370px;
+    background: #363f48;
+    box-shadow: 3px 3px 3px #17181c, -3px -3px 3px #676e7e;
+    border-radius: 10px;
+    color: #fff;
+    overflow: hidden;
+}
+.output{
+    display: block;
+    width: 100%;
+    background: transparent;
+    box-shadow: inset 3px 3px 3px #17181c, inset -3px -3px 3px #676e7e;
+    text-align: right;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 3.4rem;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 3px;
+}
+.key{
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    background: #363f48;
+    box-shadow: 3px 3px 3px #17181c, -3px -3px 3px #676e7e;
+    border-radius: 30px;
+    margin: 0.3rem;
+    cursor: pointer;
+
+}
+.key:active,
+.key:focus{
+    background: #676e7e;
+    box-shadow: inset 3px 3px 3px #17181c, inset -3px -3px 3px #676e7e;
+}
+.key-op{
+    color: cyan;
+}
+.key-equal{
+    grid-column: 4 / 5;
+    grid-row: 2 / span 4;
+    border-radius: 30px;
+    color: cyan;
+    height: auto;
+    background: #363f48;
+    
+}
